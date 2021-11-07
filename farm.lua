@@ -1,5 +1,5 @@
 
-print "test3"
+print "test3.1"
 
 local exists, data=turtle.inspectDown()
 local state = data.metadata
@@ -17,3 +17,4 @@ local function replant()
         end
     end
 end
+replant()
