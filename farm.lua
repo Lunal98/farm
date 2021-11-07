@@ -5,10 +5,10 @@ local exists, data=turtle.inspectDown()
 local state = data.metadata
 local function replant()
     if state==3  then
-        local crop=string.sub(data.name,1,string.len(data.name)-4)
+        local crop=string.sub(data.name,17,string.len(data.name)-4)
         turtle.digDown()
         local i = turtle.getItemDetail(2).name
-        local item=string.sub(i,1,string.len(i)-4)
+        local item=string.sub(i,14,string.len(i)-4)
         print(crop)
         print(item)
         if crop==item then
